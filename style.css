@@ -1,0 +1,76 @@
+h1 {
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 80px;
+    font-size: 70px;
+}
+
+body{
+    background-color: #204056;
+}
+
+.kelvin-bar {
+    border-radius: 40em;
+    background: white;
+    box-shadow: inset 16px 16px 32px #e6e6e6,
+    inset -16px -16px 32px #ffff;
+    height: 30vh;
+    width: 4vw;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+@keyframes rise{
+    from{
+        height: 0;
+        border-radius: 0 0 55px 55px;
+    }
+    to{
+        border-radius: 55px;
+        height: 100%;
+    }
+}
+
+.fill {
+    position: fixed;
+    content: "";
+    bottom: 0;
+    left: 0;
+    border-radius: 50px;
+    background: linear-gradient(to top, #fb7740, red);
+    width: 100%;
+    animation-name: rise;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    margin: auto;
+}
+
+.container { 
+    display: flex;
+    padding: 30px;
+    margin: 1%;
+    border-radius: 20px;
+    float: left;
+}
+
+.container div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    text-align: center;
+    float:left;
+    padding: 70px;
+}
+
+.nombres {
+    text-align: center;
+    align-items: center;
+}
